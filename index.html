@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="topContainer">
+      <h1>Euro To Other Currency</h1>
+      <div class="form">
+        <div class="amount">
+          <p>Enter amount</p>
+          <input id="currencyInput" type="number" />
+        </div>
+        <div class="dropdown">
+          <div class="from">
+            <p>From</p>
+            <div class="selectContainer">
+              <!-- <select name="from">
+                        <option value="USD">USD</option>
+                    </select> -->
+              <strong>EUR</strong>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-right"></i>
+          <div class="To">
+            <p>To</p>
+            <div class="selectContainer">
+              <select id="toCountry" name="from">
+                <!-- <option value="usd">USD</option>
+                <option value="inr">INR</option>
+                <option value="aud">AUD</option> -->
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div  class="msg">
+          <p>The currency converted is: <span id="convertedCurrency"></span></p>
+        </div>
+        <button id="buttonElement">
+          Get Exchange Rate
+        </button>
+      </div>
+    </div>
+    <script type="module" src="api.js"></script>
+  </body>
+</html>
